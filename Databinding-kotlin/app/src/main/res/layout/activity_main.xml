@@ -20,6 +20,7 @@
             android:layout_height="wrap_content"
             android:background="#F0F0F0"
             android:hint="검색할 userId를 입력하세요"
+            android:text="@{viewModel.searchUser}"
             android:padding="10dp"
             android:textSize="16dp"
             app:layout_constraintEnd_toStartOf="@+id/tv_search"

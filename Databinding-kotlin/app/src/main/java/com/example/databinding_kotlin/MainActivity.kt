@@ -18,7 +18,6 @@ import retrofit2.Callback
 import retrofit2.Response
 
 class MainActivity : AppCompatActivity() {
-    var retrofit = RetrofitService.getInstance()
     lateinit var binding: ActivityMainBinding
     lateinit var mainViewModel: MainViewModel
 
@@ -35,29 +34,6 @@ class MainActivity : AppCompatActivity() {
 
         //RvAdapter 설정
         binding.rvList.layoutManager = LinearLayoutManager(this)
-
-        initRetrofit()
-    }
-
-    fun initRetrofit(){
-        retrofit.requestRegUser("younminchan").enqueue(object : Callback<ArrayList<GitUserItem>> {
-            override fun onResponse(call: Call<ArrayList<GitUserItem>>, response: Response<ArrayList<GitUserItem>>) {
-                Log.e("YMC", "retrofit onResponse")
-                if(response.isSuccessful){
-                    var res = response.body()
-
-                    if (res != null) {
-                        for(item in res){
-                            Log.e("YMC", "name: ${item.name} / full_name: ${item.fullName}")
-                        }
-                    }
-                }
-            }
-
-            override fun onFailure(call: Call<ArrayList<GitUserItem>>, t: Throwable) {
-                Log.e("YMC", "retrofit onResponse: ${t.toString()}")
-            }
-        })
     }
 }
 
