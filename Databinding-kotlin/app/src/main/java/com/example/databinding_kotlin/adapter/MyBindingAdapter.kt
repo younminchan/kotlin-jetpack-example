@@ -20,10 +20,4 @@ object MyBindingAdapter{
         myAdapter.userList = items
         myAdapter.notifyDataSetChanged()
     }
-
-    @BindingAdapter("search")
-    @JvmStatic
-    fun gitSearch(textView: TextView, str: String){
-
-    }
 }
