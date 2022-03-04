@@ -4,8 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <data>
-        <import type="android.widget.EditText"/>
-        <import type="android.widget.TextView"/>
         <variable
             name="mainActivity"
             type="com.example.databinding_kotlin.MainActivity" />
