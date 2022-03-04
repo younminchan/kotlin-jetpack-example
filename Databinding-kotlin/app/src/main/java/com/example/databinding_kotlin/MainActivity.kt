@@ -34,7 +34,7 @@ class MainActivity : AppCompatActivity() {
         binding.lifecycleOwner = this //TODO: 반드시 필요
 
         //RvAdapter 설정
-        binding.rvList.layoutManager = LinearLayoutManager(this)
+//        binding.rvList.layoutManager = LinearLayoutManager(this)
     }
 
     fun Gitsearch(){

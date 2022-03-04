@@ -42,7 +42,7 @@
             app:layout_constraintStart_toEndOf="@+id/et_search"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <!--            XML <-> ViewModel통신방법 -->
+<!--        XML <-> ViewModel -->
 <!--        android:onClick="@{() -> viewModel.buttonClick()}"-->
 
         <androidx.recyclerview.widget.RecyclerView

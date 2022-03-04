@@ -12,7 +12,9 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Databindingkotlin">
+        android:theme="@style/Theme.Databindingkotlin"
+        android:usesCleartextTraffic="true">
+        <!-- TODO: usesCleartextTraffic: http사용가능-->
 
         <activity
             android:name=".MainActivity"
