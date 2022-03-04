@@ -1,6 +1,5 @@
 package com.example.databinding_kotlin.adapter
 
-import android.util.Log
 import android.widget.TextView
 import androidx.databinding.BindingAdapter
 import androidx.recyclerview.widget.RecyclerView

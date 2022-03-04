@@ -25,22 +25,19 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
 
-        //뷰모델 연결
+        //DataBinding
+        binding.mainActivity = this
         mainViewModel = ViewModelProvider(this).get(MainViewModel::class.java)
         binding.viewModel = mainViewModel
 
-        //뷰모델을 LifeCycle에 종속, LifeCycle동안 옵저버 역할
-        binding.lifecycleOwner = this
+        //ViewModel LifeCycle에 종속, LifeCycle-Observe역할
+        binding.lifecycleOwner = this //TODO: 반드시 필요
 
         //RvAdapter 설정
         binding.rvList.layoutManager = LinearLayoutManager(this)
     }
-}
 
-/**
- * 작업 목적!
- * 1. Singleton Retrofit object
- * 2. Coroutine Scrope 활용
- * 3. Databinding 활용한 UI객체 연관성 줄이기
- *
- * */
+    fun Gitsearch(){
+        mainViewModel.initRetrofit(binding.etSearch, binding.etSearch.text.toString())
+    }
+}
