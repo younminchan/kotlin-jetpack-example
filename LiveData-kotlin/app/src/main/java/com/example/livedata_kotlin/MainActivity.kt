@@ -22,6 +22,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun liveDataInit(){
+        /** EditText변경에 따른 listener추가 */
         binding.etInput.addTextChangedListener(object : TextWatcher{
             override fun beforeTextChanged(p0: CharSequence?, p1: Int, p2: Int, p3: Int) {
             }
@@ -34,6 +35,7 @@ class MainActivity : AppCompatActivity() {
             }
         })
 
+        /** EditText 변경에 따른 TextView 설정*/
         liveText.observe(this, Observer {
             binding.tvResult.text = "Livedata 값: $it"
         })
