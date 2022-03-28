@@ -10,3 +10,4 @@ https://developer.android.com/jetpack
 - DataBinding: https://github.com/younminchan/kotlin-jetpack-example/tree/main/Databinding-kotlin  
 - ViewModel: https://github.com/younminchan/kotlin-jetpack-example/tree/main/ViewModel-kotlin  
 - LiveData: https://github.com/younminchan/kotlin-jetpack-example/tree/main/LiveData-kotlin  
+- Room: https://github.com/younminchan/kotlin-jetpack-example/tree/main/Room-kotlin  
