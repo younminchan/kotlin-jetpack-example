@@ -11,3 +11,4 @@ https://developer.android.com/jetpack
 - ViewModel: https://github.com/younminchan/kotlin-jetpack-example/tree/main/ViewModel-kotlin  
 - LiveData: https://github.com/younminchan/kotlin-jetpack-example/tree/main/LiveData-kotlin  
 - Room: https://github.com/younminchan/kotlin-jetpack-example/tree/main/Room-kotlin  
+- LifeCycles: https://github.com/younminchan/kotlin-jetpack-example/tree/main/Lifecycles-kotlin  
