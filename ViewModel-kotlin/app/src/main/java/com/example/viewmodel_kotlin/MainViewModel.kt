@@ -6,7 +6,7 @@ import androidx.lifecycle.ViewModel
 class MainViewModel(userId: String) : ViewModel() {
     var strViewModel = "ViewModelTest"
 
-    /** ViewModel Singleton? */
+    /** ViewModel Singleton */
     companion object{
         private lateinit var instance: MainViewModel
 
