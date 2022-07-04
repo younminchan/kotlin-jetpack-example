@@ -6,7 +6,7 @@
 
 https://developer.android.com/jetpack
 
-<프로젝트 목록>  
+<예제프로젝트 목록>  
 - DataBinding: https://github.com/younminchan/kotlin-jetpack-example/tree/main/Databinding-kotlin  
 - ViewModel: https://github.com/younminchan/kotlin-jetpack-example/tree/main/ViewModel-kotlin  
 - LiveData: https://github.com/younminchan/kotlin-jetpack-example/tree/main/LiveData-kotlin  
